@@ -122,9 +122,6 @@ function Home({ navigation }) {
             </View>
             {admin ? (
               <View style={styles.actioncontainer}>
-                <TouchableOpacity onPress={() => deleteuser(item.id)}>
-                  <Entypo name="trash" size={24} color="red" />
-                </TouchableOpacity>
                 {item.status === "true" ? (
                   <TouchableOpacity onPress={() => updatestatus(item.id)}>
                     <AntDesign name="checksquare" size={24} color="green" />
